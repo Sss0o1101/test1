@@ -1,0 +1,37 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #2c2c2c;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 640px; /* グリッド全体の幅 */
+    background: repeating-linear-gradient(
+        45deg,
+        #2c2c2c,
+        #2c2c2c 10px,
+        #3a3a3a 10px,
+        #3a3a3a 20px
+    );
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.item {
+    flex: 0 0 calc(25% - 20px); /* 各アイテムの幅を25%からマージンを引いた値に設定 */
+    box-sizing: border-box;
+    margin: 10px;
+    background-color: #ff00ff;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    height: 100px; /* 各アイテムの高さ */
+}
